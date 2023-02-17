@@ -22,7 +22,8 @@
           </div>
           <div>
             <button
-              class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+              id="blog-btn"
+              class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400"
             >
               Blog
             </button>
@@ -33,11 +34,15 @@
     <main>
       <section class="lg:px-10 flex flex-col md:flex-row lg:flex-row">
         <div
-          class="shape-details mt-5  w-[95%] mx-auto md:w-[75%] md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-3 lg:gap-5"
+          class="shape-details mt-5 w-[95%] mx-auto md:w-[75%] md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-3 lg:gap-5"
         >
           <div class="card w-full border">
             <figure class="px-10 pt-10">
-              <img src="./images/triangle.png" alt="triangle" class="rounded-xl" />
+              <img
+                src="./images/triangle.png"
+                alt="triangle"
+                class="rounded-xl"
+              />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Triangle</h2>
@@ -46,22 +51,27 @@
               <div class="grid grid-cols-2 gap-4">
                 <div>
                   <input
+                    id="input-b"
                     class="w-12 bg-slate-200 rounded-lg outline-none"
-                    type="text" placeholder="b"
+                    type="text"
+                    placeholder="b"
                   />
                   <p class="inline">cm</p>
                 </div>
                 <div>
                   <input
+                    id="input-h"
                     class="w-12 bg-slate-200 rounded-lg outline-none"
-                    type="text" placeholder="h"
+                    type="text"
+                    placeholder="h"
                   />
                   <p class="inline">cm</p>
                 </div>
               </div>
               <div class="card-actions">
                 <button
-                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+                  id="triangle-btn"
+                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400"
                 >
                   Calculate
                 </button>
@@ -83,22 +93,27 @@
               <div class="grid grid-cols-2 gap-4">
                 <div>
                   <input
-                    class="w-12  bg-slate-200 rounded-lg outline-none"
-                    type="text" placeholder="w"
+                    id="input-w"
+                    class="w-12 bg-slate-200 rounded-lg outline-none"
+                    type="text"
+                    placeholder="w"
                   />
                   <p class="inline">cm</p>
                 </div>
                 <div>
                   <input
+                    id="input-l"
                     class="w-12 bg-slate-200 rounded-lg outline-none"
-                    type="text" placeholder="l"
+                    type="text"
+                    placeholder="l"
                   />
                   <p class="inline">cm</p>
                 </div>
               </div>
               <div class="card-actions">
                 <button
-                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+                  id="rectangle-btn"
+                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400"
                 >
                   Calculate
                 </button>
@@ -117,11 +132,15 @@
             <div class="card-body items-center text-center">
               <h2 class="card-title">Parallelogram</h2>
               <p>Area(A)=b*h</p>
-              <p>b=<span>10</span>cm, h= <span>12cm</span></p>
+              <p>
+                b=<span id="text-b-parallelogram">10</span>cm, h=
+                <span id="text-h-parallelogram">12</span>cm
+              </p>
 
               <div class="card-actions">
                 <button
-                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+                  id="Parallelogram-btn"
+                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400"
                 >
                   Calculate
                 </button>
@@ -139,11 +158,15 @@
             <div class="card-body items-center text-center">
               <h2 class="card-title">Rhombus</h2>
               <p>Area(A)=0.5*di*d2</p>
-              <p>d1=<span>16</span>cm, d2= <span>18cm</span></p>
+              <p>
+                d1=<span id="text-value-d1">16</span>cm, d2=
+                <span id="text-value-d2">18cm</span>
+              </p>
 
               <div class="card-actions">
                 <button
-                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+                  id="rhombus-btn"
+                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400"
                 >
                   Calculate
                 </button>
@@ -161,11 +184,15 @@
             <div class="card-body items-center text-center">
               <h2 class="card-title">Pentagon</h2>
               <p>Area(A)=0.5*p*b</p>
-              <p>p=<span>6</span>cm, b= <span>10</span></p>
+              <p>
+                p=<span id="textValue-p">6</span>cm, b=
+                <span id="textValue-b">10</span>cm
+              </p>
 
               <div class="card-actions">
                 <button
-                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+                  id="pentagon-btn"
+                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400"
                 >
                   Calculate
                 </button>
@@ -183,11 +210,17 @@
             <div class="card-body items-center text-center">
               <h2 class="card-title">Ellipse</h2>
               <p>Area(A)=πab</p>
-              <p>a=<span>10</span>cm, b= <span>4cm</span></p>
+              <p>
+                a=<span id="textEllipse-a">10</span>cm, b=<span
+                  id="textEllipse-b"
+                  >4</span
+                >cm
+              </p>
 
               <div class="card-actions">
                 <button
-                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+                  id="ellipse-btn"
+                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400"
                 >
                   Calculate
                 </button>
@@ -195,11 +228,48 @@
             </div>
           </div>
         </div>
-        <div class="area-details w-[20%]  mt-5 text-xl text-center font-bold underline mx-auto border >
-          <h3 class="font-bold">Area Calculation</h3>
+        <div class="calculation-details mt-5 w-[25%] mx-auto">
+          <h3 class="text-3xl font-bold underline text-center mb-2">
+            Area Calculation
+          </h3>
+          <div class="overflow-x-auto">
+            <table class="table w-full">
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th>Serial</th>
+                  <th>Shapes</th>
+                  <th>
+                    Area <br />
+                    (cm<sup>2</sup>)
+                  </th>
+                  <th>
+                    Area <br />
+                    (m<sup>2</sup>)
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="table-container">
+                <!-- row 1 -->
+                <!-- <tr>
+                  <th>1</th>
+                  <td>Quality</td>
+                  <td>Blue</td>
+                  <td><button>calc</button></td>
+                </tr> -->
+                <!-- row 2 -->
+                <!-- <tr>
+                  <th>2</th>
+                  <td>Hart Hagerty</td>
+                  <td>Purple</td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </main>
     <script src="./js/calculation.js"></script>
+    <script src="./js/blog.js"></script>
   </body>
 </html>
