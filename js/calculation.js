@@ -50,7 +50,6 @@ function disableButton(id) {
 let count = 0;
 //area of triangle
 document.getElementById("triangle-btn").addEventListener("click", function () {
-  count++;
   const broadth = stringToNumber(getInputValue("input-b"));
   const height = stringToNumber(getInputValue("input-h"));
   resetInputField("input-b", "input-h");
@@ -58,6 +57,7 @@ document.getElementById("triangle-btn").addEventListener("click", function () {
     alert("something went wrong!!Try again.");
     return;
   }
+  count++;
   const area = (0.5 * broadth * height).toFixed(2);
   displayTableData("triangle", area);
   disableButton("triangle-btn");
@@ -65,7 +65,6 @@ document.getElementById("triangle-btn").addEventListener("click", function () {
 
 //area of rectangle
 document.getElementById("rectangle-btn").addEventListener("click", function () {
-  count++;
   const width = stringToNumber(getInputValue("input-w"));
   const length = stringToNumber(getInputValue("input-l"));
   resetInputField("input-w", "input-l");
@@ -73,6 +72,7 @@ document.getElementById("rectangle-btn").addEventListener("click", function () {
     alert("something went wrong!!Try again.");
     return;
   }
+  count++;
   const area = (width * length).toFixed(2);
   displayTableData("rectangle", area);
   disableButton("rectangle-btn");
@@ -82,7 +82,6 @@ document.getElementById("rectangle-btn").addEventListener("click", function () {
 document
   .getElementById("Parallelogram-btn")
   .addEventListener("click", function () {
-    count++;
     const b = stringToNumber(getTextValue("text-b-parallelogram"));
     const h = stringToNumber(getTextValue("text-h-parallelogram"));
     resetInputField("text-b-parallelogram", "text-h-parallelogram");
@@ -90,6 +89,7 @@ document
       alert("something went wrong!!Try again.");
       return;
     }
+    count++;
     const area = (b * h).toFixed(2);
     displayTableData("Parallel", area);
     disableButton("Parallelogram-btn");
@@ -97,7 +97,6 @@ document
 
 //area of rhombus
 document.getElementById("rhombus-btn").addEventListener("click", function () {
-  count++;
   const d1 = stringToNumber(getTextValue("text-value-d1"));
   const d2 = stringToNumber(getTextValue("text-value-d2"));
   resetInputField("text-value-d2", "text-value-d2");
@@ -105,6 +104,7 @@ document.getElementById("rhombus-btn").addEventListener("click", function () {
     alert("something went wrong!!Try again.");
     return;
   }
+  count++;
   const area = (0.5 * d1 * d2).toFixed(2);
   displayTableData("rhombus", area);
   disableButton("rhombus-btn");
@@ -112,7 +112,6 @@ document.getElementById("rhombus-btn").addEventListener("click", function () {
 
 //area of pentagon
 document.getElementById("pentagon-btn").addEventListener("click", function () {
-  count++;
   const p = stringToNumber(getTextValue("textValue-p"));
   const b = stringToNumber(getTextValue("textValue-b"));
   resetInputField("textValue-p", "textValue-b");
@@ -120,6 +119,7 @@ document.getElementById("pentagon-btn").addEventListener("click", function () {
     alert("something went wrong!!Try again.");
     return;
   }
+  count++;
   const area = (0.5 * p * b).toFixed(2);
   displayTableData("pentagon", area);
   disableButton("pentagon-btn");
