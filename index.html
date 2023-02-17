@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <nav class="bg-indigo-100 mx-10 mt-10 px-10 py-5 rounded-md">
+      <nav class="bg-indigo-100 w-[95%] mx-auto mt-10 px-10 py-5 rounded-md">
         <div class="flex justify-between items-center">
           <div>
             <h1 class="font-bold text-5xl">Interactive</h1>
@@ -22,7 +22,7 @@
           </div>
           <div>
             <button
-              class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg"
+              class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
             >
               Blog
             </button>
@@ -30,5 +30,176 @@
         </div>
       </nav>
     </header>
+    <main>
+      <section class="lg:px-10 flex flex-col md:flex-row lg:flex-row">
+        <div
+          class="shape-details mt-5  w-[95%] mx-auto md:w-[75%] md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-3 lg:gap-5"
+        >
+          <div class="card w-full border">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" alt="triangle" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area(A)=0.5*b*h</p>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <input
+                    class="w-12 bg-slate-200 rounded-lg outline-none"
+                    type="text" placeholder="b"
+                  />
+                  <p class="inline">cm</p>
+                </div>
+                <div>
+                  <input
+                    class="w-12 bg-slate-200 rounded-lg outline-none"
+                    type="text" placeholder="h"
+                  />
+                  <p class="inline">cm</p>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button
+                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full border">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/rectangle.png"
+                alt="rectangle"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Rectangle</h2>
+              <p>Area(A)=w*l</p>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <input
+                    class="w-12  bg-slate-200 rounded-lg outline-none"
+                    type="text" placeholder="w"
+                  />
+                  <p class="inline">cm</p>
+                </div>
+                <div>
+                  <input
+                    class="w-12 bg-slate-200 rounded-lg outline-none"
+                    type="text" placeholder="l"
+                  />
+                  <p class="inline">cm</p>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button
+                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card w-full border">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/parallelogram.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Parallelogram</h2>
+              <p>Area(A)=b*h</p>
+              <p>b=<span>10</span>cm, h= <span>12cm</span></p>
+
+              <div class="card-actions">
+                <button
+                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full border">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/rhombus.png"
+                alt="rhombus"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Rhombus</h2>
+              <p>Area(A)=0.5*di*d2</p>
+              <p>d1=<span>16</span>cm, d2= <span>18cm</span></p>
+
+              <div class="card-actions">
+                <button
+                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full border">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/pentagon.png"
+                alt="pentagon"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Pentagon</h2>
+              <p>Area(A)=0.5*p*b</p>
+              <p>p=<span>6</span>cm, b= <span>10</span></p>
+
+              <div class="card-actions">
+                <button
+                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full border">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/ellipse.png"
+                alt="ellipse"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Ellipse</h2>
+              <p>Area(A)=πab</p>
+              <p>a=<span>10</span>cm, b= <span>4cm</span></p>
+
+              <div class="card-actions">
+                <button
+                  class="bg-indigo-400 text-xl font-semibold text-white px-10 py-2 rounded-lg hover:bg-amber-400 "
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="area-details w-[20%]  mt-5 text-xl text-center font-bold underline mx-auto border >
+          <h3 class="font-bold">Area Calculation</h3>
+        </div>
+      </section>
+    </main>
+    <script src="./js/calculation.js"></script>
   </body>
 </html>
