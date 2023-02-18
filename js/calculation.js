@@ -139,3 +139,25 @@ document.getElementById("ellipse-btn").addEventListener("click", function () {
   displayTableData("ellipse", area);
   disableButton("ellipse-btn");
 });
+
+//repeatedly background color changing
+let red = Math.round(Math.random() * 255);
+let green = Math.round(Math.random() * 255);
+let blue = Math.round(Math.random() * 255);
+// for (let i = 0; i < 6; i++) {
+//   document
+//     .getElementsByClassName("bg-change")
+//     [i].addEventListener("mousemove", function (e) {
+//       e.target.style.backgroundColor =
+//         "rgb(" + red + "," + green + "," + blue + ")";
+//       e.target.style.color = "white";
+//     });
+// }
+for (let i = 0; i < 6; i++) {
+  document
+    .getElementsByClassName("bg-change")
+    [i].addEventListener("mouseleave", function (e) {
+      e.target.style.backgroundColor =
+        "rgb(" + red + "," + green + "," + blue + ")";
+    });
+}
